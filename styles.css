@@ -1,0 +1,353 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: rgb(0, 0, 0);
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+.container::before{
+    content: "";
+    background: url(Images/1.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 94vh;
+    width: 100%;
+    opacity: 0.3;
+    z-index: -1;
+}
+.container .navbar{
+    height: 100px;
+    display: flex;
+}
+.container .navbar .left{
+    height: 100%;
+    display: flex;
+    float: left;
+}
+.container .navbar .left img{
+    height: 100px;
+    position: absolute;
+    left: 45px;
+}
+.container .navbar .right{
+    display: flex;
+    height: 100px;
+    float: right;
+    position: absolute;
+    right: 50px;
+}
+.container .navbar .right .language{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    padding: 7px 10px;
+    color: white;
+    background: none;
+    cursor: pointer;
+    margin-right: 15px;
+}
+.container .navbar .right .language option{
+    background-color: grey;
+}
+.container .navbar .right button{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 7px 17px;
+    background: #ee0510;
+    cursor: pointer;
+    outline: none;
+    border-radius: 4px;
+    border: none;
+}
+.container .navbar .right button a{
+    text-decoration: none;
+    color: white;
+}
+.container .title{
+    padding: 70px 45px;
+}
+.container .title .content{
+    width: 950px;
+    margin: auto;
+    padding: 75px 0;
+    text-align: center;
+}
+.container .title .content h1{
+    width: 650px;
+    margin: auto;
+    font-size: 3.1rem;
+    text-align: center;
+}
+.container .title .content h2{
+    width: 650px;
+    margin: auto;
+    font-size: 1.6rem;
+    text-align: center;
+}
+.container .title .content form h3{
+    font-size: 1rem;
+    margin: 18px 0;
+    text-align: center;
+}
+.container .title .content form .email{
+    width: 1000px;
+    margin: auto;
+}
+.container .title .content form .email input{
+    height: 60px;
+    width: 450px;
+    margin: auto;
+    padding: 20px;
+    font-size: 20px;
+    outline: none;
+}
+.container .title .content form .email button{
+    margin: auto;
+    height: 60px;
+    width: 180px;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    padding: 7px 17px;
+    background: #e50914;
+    cursor: pointer;
+    outline: none;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border: none;
+    margin-left: -5px;
+}
+.container .title .content form .email button:hover{
+    background-color: #f40612;
+}
+.container .title .content form .email button a{
+    text-decoration: none;
+    color: white;
+}
+.btn-rounded{
+    border-radius: 5px;
+}
+.card-1,
+.card-2,
+.card-3,
+.card-4{
+    border-top: 8px rgb(69, 69, 69) solid;
+    padding: 60px;
+}
+.card-1{
+    position: relative;
+    display: inline-grid;
+    border-top: 10px rgb(69, 69, 69) solid;
+    height: 120%;
+    grid-template-columns: 40% 30%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 60px;
+}
+
+.desc-1{
+    padding-left: 80px;
+}
+
+.style-cards h1{
+    font-size: 3rem;
+    padding: 1rem;
+    padding-left: 0;
+}
+
+.style-cards h4{
+    font-size: 1.24rem;
+    line-height: 2rem;
+}
+
+.card-1 video{
+    position: relative;
+    width: 150%;
+    height: 60%;
+    padding-left: 80px;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    z-index: -1;
+}
+
+.card-1 img{
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+
+.card-2{
+    position: relative;
+    display: flex;
+    grid-template-columns: 48% 55%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+
+.desc-2{
+    padding-left: 100px;
+}
+
+.card-3{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+
+.desc-3{
+    padding-left: 80px;
+    padding-right: 20px;
+}
+
+.card-3 img{
+    width: 110%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+
+.card-3 video{
+    position: relative;
+    top: -87px;
+    left: 109px;
+    padding-right: 1px;
+    width: 69%;
+    height: 79%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    z-index: -1;
+}
+.card-4{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 40% 50%;
+    text-align: left;
+    align-items: center;
+    padding: 35px 45px 50px;
+}
+
+.desc-4{
+    padding-left: 150px;
+}
+
+
+.faq{
+    padding-top: 70px;
+    text-align: center;
+    border-top:8px rgb(69, 69, 69) solid;
+}
+
+.faq h1{
+    padding-bottom: 50px;
+    font-size: 3rem;
+}
+
+.questions{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+    align-items: center;
+}
+
+.questions li{
+    padding: 20px 30px;
+    margin: 5px;
+    font-size: 1.6rem;
+    background-color: #303030;
+    color: white;
+    text-align: left;
+    width: 50%;
+}
+
+.faq p{
+    padding-top: 60px;
+    font-size: 1.2rem;
+    font-weight: 200;
+    
+}
+
+.input{
+    display: inline-grid;
+    align-items: center;
+    margin-left: 105px ;;
+    grid-template-columns: 50% 40%;
+    padding: 20px;
+    padding-bottom: 60px;
+}
+
+.input input{
+    width: 550px;
+    height: 3rem;
+    margin: auto;
+    padding: 20px;
+    font-size: 20px;
+    outline: none;
+}
+
+.input button{
+    margin: auto;
+    height: 3rem;
+    width: 190px;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    padding: 7px 17px;
+    background-color:  red;
+    cursor: pointer;
+    outline: none;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border: none;
+    color: white;
+    margin-left:  5px;
+}
+.input button:hover{
+    background-color: #f40612;
+}
+.input button a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.footer{
+    padding-top: 70px;
+    max-width: 100%;
+    margin: 1rem auto;
+    overflow: auto;
+    padding: 4 0px;
+    border-top:8px rgb(69, 69, 69) solid; 
+}
+
+.footer ,
+.footer a{
+    color: #999999;
+    font-size: 0.9rem;
+}
+
+.footer p{
+    margin-bottom: 1.5rem;
+    margin-left: 210px;
+}
+
+.footer .footer-cols{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-gap: 2rem;
+    padding-bottom: 90px;
+    margin-left: 210px;
+}
+
+.footer li{
+    line-height: 2.4;
+    
+}
